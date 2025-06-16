@@ -211,7 +211,7 @@ const Projects = () => {
                   <figure className="image-frame w-full h-full flex justify-center items-center">
                     <img
                       loading="lazy"
-                      src={`src/assets/images/projects/${selectedProject}`}
+                      src={`assets/images/projects/${selectedProject}`}
                       alt={selectedProject.split(".")[0]}
                       className="max-w-full max-h-full w-auto h-auto object-contain block bg-[#ECF3F1] opacity-95 py-6 px-5 rounded-2xl"
                     />
