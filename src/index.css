@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+.fixed-container {
+  margin: 0 4.75rem;
+  overflow: hidden;
+}
+
+.image-container,
+.info-container,
+.skills-slider-wrapper,
+.skills-main,
+.all-projects,
+.contact-details,
+.footer-container {
+  transform: translateY(30px);
+  filter: blur(10px);
+  opacity: 0;
+  transition: all 1.5s ease-out;
+}
+
+.section-transform {
+  transform: translateY(0px);
+  filter: blur(0px);
+  opacity: 1;
+}
+
+/* Fixed Container Media Query */
+@media (max-width: 575px) {
+  .fixed-container {
+    margin: 0 1rem;
+  }
+}

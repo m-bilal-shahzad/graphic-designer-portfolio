@@ -1,0 +1,50 @@
+/* Navbar Fix On Scroll */
+.navbar-fixed {
+  position: fixed;
+  background: #ecf3f1;
+  box-shadow: 0 2px 8px #0000000d;
+  transition: box-shadow 500ms linear;
+}
+
+/* Nav Items Hover Effect */
+.nav-item::before {
+  position: absolute;
+  content: "";
+  height: 1.5px;
+  width: 38px;
+  top: 32px;
+  left: 50%;
+  transform: translateX(-50%) scale(0);
+  background: #448c74;
+  transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+}
+
+.nav-item:hover::before {
+  transform: translateX(-50%) scaleX(1);
+  opacity: 1;
+}
+
+/* Media Query */
+@media (max-width: 786px) {
+  .nav-items,
+  .contact-btn {
+    display: none;
+  }
+
+  .hamburger-navbar {
+    display: block;
+  }
+
+  .hamburger-menu-show {
+    display: block;
+    animation: navbar 1s ease-out forwards;
+  }
+
+  @keyframes navbar {
+    100% {
+      transform: translateX(-100%);
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+/* Media Query */
+@media (max-width: 786px) {
+  .footer-upper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .footer-container {
+    padding: 30px;
+  }
+
+  .footer-info h2 {
+    font-size: 20px;
+    margin: auto;
+  }
+
+  .footer-info p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 370px) {
+  .footer-container {
+    padding: 18px;
+  }
+
+  .footer-info h2 {
+    font-size: 18px;
+  }
+
+  .footer-info p, .copyright-line {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .footer-nav-items {
+    font-size: 14px;
+  }
+
+  .social-icons {
+    gap: 6px;
+  }
+}
