@@ -49,7 +49,7 @@ const Intro = () => {
     "PhotoShop.webp",
     "Illustrator.webp",
     "InDesign.webp",
-    "AdobeXd.webp",
+    "AdobeXD.webp",
     "Canva.webp",
     "CorelDraw.webp",
     "AffinityDesigner.webp",
@@ -70,7 +70,7 @@ const Intro = () => {
               {/* Freelancer Image */}
               <div className="image mb-10">
                 <img
-                  src="src/assets/images/profile/profile.jpg"
+                  src="assets/images/profile/profile.jpg"
                   alt=""
                   className="m-auto rounded-[50%] border-2 border-dashed border-[#448c74] p-2"
                 />
@@ -148,7 +148,7 @@ const Intro = () => {
                   {[...skillsIcons, ...skillsIcons].map((icon, index) => (
                     <SkillsIcon
                       key={index}
-                      src={`src/assets/images/skills/${icon}`}
+                      src={`assets/images/skills/${icon}`}
                       alt={icon.split(".")[0]}
                     />
                   ))}

@@ -131,7 +131,7 @@ const Skills = () => {
                 {skillsData.map((card) => (
                   <SkillsCard
                     key={card.id}
-                    src={`src/assets/images/skills/${card.icon}`}
+                    src={`assets/images/skills/${card.icon}`}
                     alt={card.icon.split(".")[0]}
                     title={card.title}
                     percent={card.percent}

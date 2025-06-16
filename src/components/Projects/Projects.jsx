@@ -159,7 +159,7 @@ const Projects = () => {
                     <div className="project-img w-full bg-[#444] aspect-[4/3] overflow-hidden relative rounded-xl after:absolute after:bg-black after:w-full after:h-full after:top-0 after:left-0 after:z-20 after:opacity-100 after:invisible group-hover:after:visible  group-hover:after:opacity-35 transition-opacity duration-300">
                       <img
                         loading="lazy"
-                        src={`src/assets/images/projects/${project.image}`}
+                        src={`assets/images/projects/${project.image}`}
                         alt={project.image.split(".")[0]}
                         className="w-full h-full object-cover object-center transition-transform duration-300 group-hover:scale-105"
                       />
